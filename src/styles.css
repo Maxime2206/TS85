@@ -1,1 +1,328 @@
-/* You can add global styles to this file, and also import other style files */
+/* Global reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Body styling */
+  body {
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    font-size: 16px;
+    padding: 20px;
+  }
+  
+  /* Header styles */
+  header {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+  }
+  
+  /* Navigation */
+  nav {
+    background-color: #444;
+    padding: 10px 0;
+    text-align: center;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    margin: 0 10px;
+    font-size: 1rem;
+  }
+  
+  nav a:hover {
+    background-color: #555;
+    border-radius: 5px;
+  }
+  
+  /* Main content area */
+  main {
+    margin-top: 20px;
+  }
+  
+  /* Cards */
+  .card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    padding: 20px;
+    transition: transform 0.3s;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .card p {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  /* Buttons */
+  button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }
+  
+  /* Form */
+  form {
+    background-color: white;
+    padding: 30px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  form input, form select, form textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  form label {
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+  form input[type="submit"] {
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  form input[type="submit"]:hover {
+    background-color: #218838;
+  }
+  
+  /* Table */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+  }
+  
+  table th, table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  table th {
+    background-color: #f8f9fa;
+  }
+  
+  table tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  footer p {
+    font-size: 0.9rem;
+  }
+  
+  /* Utility classes */
+  .text-center {
+    text-align: center;
+  }
+  
+  .text-right {
+    text-align: right;
+  }
+  
+  .text-left {
+    text-align: left;
+  }
+  
+  .hide {
+    display: none;
+  }
+  
+  /* Media Queries */
+  @media screen and (max-width: 768px) {
+    header h1 {
+      font-size: 2rem;
+    }
+  
+    nav a {
+      font-size: 0.9rem;
+    }
+  
+    .card {
+      padding: 15px;
+    }
+  
+    form {
+      padding: 20px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    nav a {
+      font-size: 0.8rem;
+    }
+  
+    .card h2 {
+      font-size: 1.2rem;
+    }
+  
+    button {
+      padding: 10px 15px;
+      font-size: 0.9rem;
+    }
+  }
+  
+  /* Dark Mode */
+  body.dark-mode {
+    background-color: #121212;
+    color: #f4f4f4;
+  }
+  
+  body.dark-mode header {
+    background-color: #222;
+  }
+  
+  body.dark-mode nav {
+    background-color: #333;
+  }
+  
+  body.dark-mode footer {
+    background-color: #222;
+  }
+  
+  body.dark-mode .card {
+    background-color: #333;
+    color: #f4f4f4;
+  }
+  
+  body.dark-mode button {
+    background-color: #0069d9;
+  }
+  
+  body.dark-mode button:hover {
+    background-color: #0056b3;
+  }
+  
+  body.dark-mode form {
+    background-color: #333;
+  }
+  
+  body.dark-mode table th, body.dark-mode table td {
+    border-color: #444;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .fade-in {
+    animation: fadeIn 1s ease-in;
+  }
+  
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+  }
+  
+  /* Custom drop-down */
+  select {
+    background-color: #fff;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    width: 100%;
+  }
+  
+  select:focus {
+    outline: none;
+    border-color: #007bff;
+  }
+  
+  /* Custom progress bar */
+  progress {
+    width: 100%;
+    height: 20px;
+    border-radius: 10px;
+  }
+  
+  progress::-webkit-progress-bar {
+    background-color: #f3f3f3;
+  }
+  
+  progress::-webkit-progress-value {
+    background-color: #007bff;
+  }
+  
+  progress::-moz-progress-bar {
+    background-color: #007bff;
+  }
+  
